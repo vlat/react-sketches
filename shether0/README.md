@@ -1,3 +1,5 @@
+Get to the root directory (there package.json lives)
+
 ### 1. `npm install`
 
 Install required packages
