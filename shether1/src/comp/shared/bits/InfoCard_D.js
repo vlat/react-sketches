@@ -8,13 +8,14 @@ import CardMedia from "@material-ui/core/CardMedia/CardMedia";
 
 export class InfoCard extends React.Component<> {
     render() {
+        let imgUrl = 'https://picsum.photos/' + this.props.imageWidth + '/200/?random';
         return (
             <Card className="sketch-card">
                 <CardActionArea>
                     <CardContent>
                         <CardMedia
                             className={'sketch-media'}
-                            image="https://picsum.photos/500/200/?random"
+                            image={imgUrl}
                             title="Участников форума"
                         />
                         <Typography gutterBottom variant="headline" component="h2">

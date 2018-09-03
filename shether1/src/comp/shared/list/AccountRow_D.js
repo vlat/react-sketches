@@ -18,7 +18,7 @@ export class AccountRow extends React.Component {
                 default:
                     return (
                         <TableRow>
-                            <TableCell className={'sketch-tbody'}>{this.props.username}</TableCell>
+                            <TableCell className={'sketch-tbody'}>{'***' + this.props.username.substr(this.props.username.length - 4)}</TableCell>
                             <TableCell className={'sketch-tbody'}>{this.props.address}</TableCell>
                             <TableCell className={'sketch-tbody'} numeric>{this.props.balance}</TableCell>
                         </TableRow>

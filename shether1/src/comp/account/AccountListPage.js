@@ -55,9 +55,9 @@ export class AccountListPage extends React.Component {
                 </Typography>
 
                 <div className="cards">
-                    <InfoCard count={5000} title={'участников форума'}/>
-                    <InfoCard count={this.state.walCount} title={'кошельков Ethereum'}/>
-                    <InfoCard count={500} title={'книг в магазинах Сбербанка'}/>
+                    <InfoCard count={5000} imageWidth={501} title={'участников форума'}/>
+                    <InfoCard count={this.state.walCount} imageWidth={502} title={'кошельков Ethereum'}/>
+                    <InfoCard count={500} imageWidth={503} title={'книг в магазинах Сбербанка'}/>
                 </div>
                 <AccountList mode={'short'}/>
             </div>
