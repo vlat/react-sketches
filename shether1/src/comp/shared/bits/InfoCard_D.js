@@ -18,7 +18,7 @@ export class InfoCard extends React.Component<> {
                             title="Участников форума"
                         />
                         <Typography gutterBottom variant="headline" component="h2">
-                            {this.props.count}
+                            {this.props.count ? this.props.count : '--'}
                         </Typography>
                         <Typography component="p">{this.props.title}</Typography>
                     </CardContent>

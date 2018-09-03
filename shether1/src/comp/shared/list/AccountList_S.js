@@ -18,6 +18,10 @@ export class AccountList extends React.Component<> {
         this.state = {data: [], processing:false};
     }
 
+    componentWillReceiveProps  (){
+        this.reloadAccountsState().then(accounts => this.setState({data: accounts, processing:false}));
+    }
+
     reloadAccountsState(): Promise {
         let _that = this;
         return new Promise(function (resolve, reject) {
